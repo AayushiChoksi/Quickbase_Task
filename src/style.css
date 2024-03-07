@@ -1,0 +1,425 @@
+body { 
+    font-family: sans-serif;
+}
+
+.form-container {
+    width: 800px;
+    border-radius: 8px;
+    border: 1px solid #87ceeb;
+    margin: 100px auto;
+    overflow: hidden;
+    height: 650px;
+}
+.multipleSelect {
+    display: flex;
+    margin-bottom: 10px;
+    margin-right: 190px;
+    margin-left: 150px;
+    margin-bottom: auto;
+    align-items: center;
+    margin-top: -17px;
+    
+}
+.progress-container {
+    width: 100%;
+    height: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 4px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+
+
+.live-preview {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+  }
+  
+  .live-preview h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd; /* Add a bottom border to headings */
+    padding-bottom: 10px; /* Add some space below headings */
+  }
+  
+  .live-preview div {
+    margin-bottom: 10px;
+  }
+  
+  .live-preview strong {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .live-preview button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .live-preview button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add hover effect to headings */
+  .live-preview h3:hover {
+    color: #007bff;
+    cursor: pointer;
+  }
+
+.multipleSelectValue {
+    margin-right: 20px;
+}
+
+.form-group-type label {
+    margin-right: 1000px;
+    font-weight: bold;
+    width: 80%;
+    margin-left: 65px;
+   
+}
+
+
+.form-group {
+    width: 80%;
+    margin: 0 20px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-group label {
+    margin-right: 10px;
+    font-weight: bold;
+    width: 80%;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 300%;
+    padding: 10px;
+    margin-top: auto;
+    margin-right: 190px;
+    margin-left: 20px;
+    margin-bottom: auto;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+#submit-btn {
+    padding: 13px 35px;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    font-size: large;
+    margin-top: 40px;
+    margin-left: -240px;
+    cursor: pointer;
+   
+}
+
+#cancel-link {
+    color: red;
+    cursor: pointer;
+}
+
+.form-container h2 {
+    background-color: lightblue;
+    color: blue;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-top: auto;
+    border-bottom: 1px solid #cbeaf2;
+    text-align: center;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-left: 20px; /* Adjust this value as needed */
+    margin-top: 5px; /* Adjust this value as needed */
+}
+.highlighted-choices {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .highlighted-choices span {
+    display: inline-block;
+  }
+  
+  .highlighted-choices span:nth-child(2) {
+    color: red;
+  }
+  textarea {
+    font-family: inherit; /* Use the same font as the surrounding text */
+    font-size: inherit;   /* Use the same font size as the surrounding text */
+    border: 1px solid #ccc; /* Add a border for clarity */
+  }
+  
+
+  
+.choices-textarea-container {
+    
+    margin-right: 250px;
+    font-weight: bold;
+    width: 80%;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .choices-textarea {
+    flex: 1;
+    margin-right: 50px;
+    width: 35%;
+    
+  }
+  
+  .choice-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .delete-button {
+    margin-left: 5px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+
+    .form-group label {
+        width: 100%; /* Full width for labels */
+        margin-bottom: 5px; /* Adjust margin */
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%; /* Full width for inputs */
+    }
+
+    #submit-btn {
+        margin: 20px auto; /* Center button */
+    }
+
+    .choices-textarea-container {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .form-container {
+        width: 95%;
+        margin: 50px auto; /* Adjust margin */
+    }
+
+    .form-group label {
+        width: 100%; /* Full width for labels */
+        margin-bottom: 5px; /* Adjust margin */
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%; /* Full width for inputs */
+    }
+
+    #submit-btn {
+        margin: 20px auto; /* Center button */
+    }
+
+    .choices-textarea-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 896px) {
+    .form-container {
+        width: 90%;
+    }
+
+    .form-group label {
+        width: 100%; /* Full width for labels */
+        margin-bottom: 5px; /* Adjust margin */
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group-type,
+    .form-group-type-label,
+    .form-group textarea {
+        width: 100%; /* Full width for inputs */
+    }
+
+    #submit-btn {
+        margin: 20px auto; /* Center button */
+    }
+
+    .choices-textarea-container {
+        width: 100%;
+    }
+    .choices-textarea{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+    .form-container {
+        width: 100%;
+    }
+
+    .form-group label {
+        width: 100%; /* Full width for labels */
+        margin-bottom: 5px; /* Adjust margin */
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%; /* Full width for inputs */
+        
+    }
+
+    #submit-btn {
+        margin: 20px auto; /* Center button */
+    }
+
+    .choices-textarea-container {
+        width: 100%;
+    }
+}
+
+  .long-text{
+    color: red; /* Set the color of characters beyond the first 40 */
+  }
+  
+  
+  .live-preview {
+    flex: 1;
+  }
+  
+  
+@media only screen and (max-width: 320px) {
+    .form-container {
+        width: 95%;
+        margin: 50px auto; /* Adjust margin */
+    }
+
+    .form-group label {
+        width: 100%; /* Full width for labels */
+        margin-bottom: 5px; /* Adjust margin */
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%; /* Full width for inputs */
+    }
+
+    #submit-btn {
+        margin: 20px auto; /* Center button */
+    }
+
+    .choices-textarea-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 400px) {
+    .form-container {
+        width: 90%;
+    }
+
+    .form-group label {
+        width: 100%; /* Full width for labels */
+        margin-bottom: 5px; /* Adjust margin */
+    }
+
+    .form-group input,
+    .form-group select{
+    
+        width: 100%; /* Full width for inputs */
+    }
+
+    #submit-btn {
+        margin: 20px auto; /* Center button */
+    }
+
+    .choices-textarea-container {
+        width: 100%;
+    }
+    .form-group textarea {
+        width: calc(100% - 20px); /* Adjust width to accommodate padding */
+        padding: 10px; /* Reset padding */
+    }
+    /* Default styles */
+
+/* Add default styles here */
+
+/* Media query for mobile devices (320px - 480px) */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .form-container {
+      width: 90%; /* Adjust width to fit smaller screens */
+      margin: 0 auto; /* Center the form */
+    }
+  
+    /* Adjust form inputs and labels */
+    .form-group label,
+    .form-group input[type="text"],
+    .form-group select,
+    .choices-textarea textarea {
+      width: 100%; /* Make inputs full width */
+      margin-bottom: 10px; /* Add spacing between inputs */
+    }
+  
+    /* Adjust button styles */
+    .button button,
+    #cancel-link {
+      display: block; /* Make buttons block-level */
+      width: 100%; /* Make buttons full width */
+      margin-top: 10px; /* Add spacing above buttons */
+    }
+  
+    /* Adjust progress bar */
+    .progress-container {
+      width: 90%; /* Adjust width to fit smaller screens */
+      margin: 20px auto; /* Center the progress bar */
+    }
+  
+    /* Adjust live preview section */
+    .live-preview {
+      width: 90%; /* Adjust width to fit smaller screens */
+      margin: 20px auto; /* Center the live preview */
+    }
+}  
+}
+
+
